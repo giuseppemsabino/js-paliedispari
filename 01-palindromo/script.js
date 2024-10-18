@@ -8,6 +8,20 @@ const wordInput = prompt('inserisci una parola palindroma');
 function isWordCorrect(wordInput){
 
     wordInput = wordInput.toLowerCase();
-    
 
+    let start = 0;
+    let end = wordInput.length -1;
+
+    while(start < end){
+
+        if(wordInput[start] !== wordInput[end]){
+            return false;
+        }
+        start ++;
+        end --;
+    }
+
+    return true;
 }
+
+console.log(isWordCorrect(wordInput));
