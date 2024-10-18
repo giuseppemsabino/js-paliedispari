@@ -28,5 +28,14 @@ function isPairOrNot(number){
     return number % 2 === 0 ? 'il numero e pari' : 'il numero e dispari';
 }
 
+let userChoice = prompt('scegli "pari" o "dispari"').toLowerCase();
+
+let userNumber = parseInt(prompt('segli un numero tra "1" e "5"'));
+
+let pcNumber = randomNumberPc;
+
+let sum = userNumber + pcNumber;
+
+let result = isPairOrNot(sum);
 
 
