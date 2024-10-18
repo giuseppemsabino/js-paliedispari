@@ -30,12 +30,28 @@ function isPairOrNot(number){
 
 let userChoice = prompt('scegli "pari" o "dispari"').toLowerCase();
 
-let userNumber = parseInt(prompt('segli un numero tra "1" e "5"'));
+console.log(userChoice);
 
-let pcNumber = randomNumberPc;
+let userNumber = parseInt(prompt('segli un numero tra "1" e "5"'));
+console.log(userNumber);
+
+
+let pcNumber = randomNumberPc();
+console.log(pcNumber);
+
 
 let sum = userNumber + pcNumber;
+console.log(sum);
+
 
 let result = isPairOrNot(sum);
+console.log(result);
+
+if(result === userChoice){
+    console.log('hai vinto')
+}else{
+    console.log('hai perso')
+}
+
 
 
